@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<style type="text/css">
+		input.empty-field {
+			color: #666;
+		}
+	</style>
+	<title>Placeholder Demo</title>
+</head>
+<body>
+<form>
+	Search: <input type="text" name="q" value="" placeholder="Input your search text here..."/>
+	<input type="submit" value="Search"/>
+</form>
+
+<script type="text/javascript" src="../lib/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="../src/placeholder-fallback.js"></script>
+<script type="text/javascript">
+	placeholderFallback($('input'));
+</script>
+</body>
+</html>
